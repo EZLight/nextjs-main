@@ -1,19 +1,19 @@
 
+import { url } from "inspector";
 import React from "react";
 import Header from "../components/Header";
-import AbsLogo from '../public/assets/ABSLogo.png'
-
+import Dropdown from '../components/Dropdown'
+import {AbsLogo} from '../styles/images'
 
 export default function Home() {
 
 
   return (
-   <div className="w3-content w3-padding">
-    <img className="" src='./assets/ABSLogo.png' alt="ABSLogo" />
-    <Header />
-    
-  
-   <p className=""></p>
+    <div>
+   <section className="w3-content" >
+      <Dropdown/>
+      <img className="w3-image w3-content" src={AbsLogo} style={{width:'300px'}} />
+   </section>
    </div>
   )
 }

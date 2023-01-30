@@ -1,1 +1,1 @@
-export var AbsLogo=""
+export var AbsLogo="/assets/ABSLogo.png"
