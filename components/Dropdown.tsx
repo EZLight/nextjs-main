@@ -1,12 +1,12 @@
-import React from 'react'
+import React, { Children } from 'react'
 import Header from './Header'
 
 
 
-export default function Dropdown(){
+export default function Dropdown(props){
     
     function myFunction() {
-        var x = document.getElementById("Demo");
+        var x = document.getElementById(`${props.demo}`);
         if (x.className.indexOf("w3-show") == -1) {
           x.className += " w3-show";
         } else { 
@@ -16,10 +16,10 @@ export default function Dropdown(){
 return(
     <div>
 
-    <button onClick={myFunction} className="w3-button w3-circle w3-black">Menu</button>
+    <button onClick={myFunction} className={`${props.classType}`}>{props.title}</button>
  <section className="w3-dropdown-click">
-    <article id="Demo" className="w3-dropdown-content w3-bar-block" >
-     <Header />
+    <article id={`${props.demo}`} className="w3-dropdown-content w3-transparent w3-bar-block" >
+     {props.children}
     </article>
   </section>
     </div>
