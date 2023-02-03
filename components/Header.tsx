@@ -1,19 +1,16 @@
 import * as Navigation from '../styles/styles'
-import ABSButton from './Button'
+import Link from 'next/link'
 
 function Header() {
     return (
         <header  className={Navigation.NavBar} style={{width:'75px', height:'250px'}}>
-<button className={Navigation.HomeButton}>Home</button>
-<button className={Navigation.NavButton}>Projects</button>
-<button className={Navigation.NavButton}>Blog</button>
-<button className={Navigation.NavButton}>Contact</button>
-<button className={Navigation.NavButton}>About</button>
-<button className={Navigation.NavButton}>Members</button>
-<button className={Navigation.NavButton}>Staff</button>
-
-
-
+<button className={Navigation.HomeButton}><Link href="/">Home</Link></button>
+<button className={Navigation.NavButton}><Link href="/projects">Projects</Link></button>
+<button className={Navigation.NavButton}><Link href="https://www.antiblasphemystudios.com">Blog</Link></button>
+<button className={Navigation.NavButton}><Link href="/contact">Contact</Link></button>
+<button className={Navigation.NavButton}><Link href="/about">About</Link></button>
+<button className={Navigation.NavButton}><Link href="/members">Members</Link></button>
+<button className={Navigation.NavButton}><Link href="/staff">Staff</Link></button>
         </header>
     )
 }
