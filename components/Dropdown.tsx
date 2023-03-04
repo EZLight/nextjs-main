@@ -1,5 +1,4 @@
-import React, { Children } from 'react'
-import Header from './Header'
+import React from 'react'
 
 
 
@@ -17,8 +16,8 @@ return(
     <div>
 
     <button onClick={myFunction} className={`${props.classType}`}>{props.title}</button>
- <section className="w3-dropdown-click">
-    <article id={`${props.demo}`} className="w3-dropdown-content w3-transparent w3-bar-block" >
+ <section className="w3-dropdown-click" >
+    <article id={`${props.demo}`} style={{textOverflow:'ellipsis',width:'255px'}} className="w3-dropdown-content w3-transparent w3-padding"  >
      {props.children}
     </article>
   </section>
