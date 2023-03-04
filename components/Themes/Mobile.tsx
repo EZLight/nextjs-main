@@ -5,25 +5,26 @@ import {AbsLogo} from '../../styles/images'
 import Header from "../Header"
 import Footer from "../Footer"
 import * as Navigation from '../../styles/styles'
+import Body from '../Body'
 
 
 export default function Mobile(props) {
   return (
-    <div>   <section className="w3-content " >           
+    <div className="w3-content w3-hide-medium w3-hide-large">   <section  >           
     <button className={Navigation.RegisterButton}>Get Started</button>
     <button className={Navigation.MemberButton}>Sign In</button>
-    <Dropdown title="Menu" color="black" demo="Menu" classType="w3-border w3-rightbar w3-button w3-black w3-bar-item"><Header /></Dropdown>
-<section className="w3-display-container">
-<Image imgSrc={AbsLogo} style={{width:'250px'}}/>
-<article className="w3-display-topleft">
-<Dropdown title={props.title} color="black" demo="News" classType="w3-button w3-amber w3-block w3-border w3-border-black w3-rightbar">
-<p className="w3-tiny w3-opacity-min w3-white">{props.children}</p>
-</Dropdown>
+    <Dropdown title="Menu" color="black" demo="Menu" classType=" w3-tiny w3-border w3-rightbar w3-button w3-black w3-bar-item"><Header /></Dropdown>
+</section>
 
-</article>
+<section className=''>
+<div className=''><Body title="News">{props.children}</Body></div>
+<Image imgSrc={AbsLogo} className="w3-image" style={{width:'auto'}}/>
+
 
 </section>
-<Footer size="w3-tiny" />
- </section></div>
+<section>
+<Footer settings="w3-tiny w3-container w3-center" />
+ </section>
+ </div>
   )
 }

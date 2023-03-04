@@ -14,10 +14,9 @@ export default function Dropdown(props){
       }
 return(
     <div>
-
-    <button onClick={myFunction} className={`${props.classType}`}>{props.title}</button>
+    <button onClick={myFunction} style={{width:`${props.width}`}} className={`${props.classType}`}>{props.title}</button>
  <section className="w3-dropdown-click" >
-    <article id={`${props.demo}`} style={{textOverflow:'ellipsis',width:'255px'}} className="w3-dropdown-content w3-transparent w3-padding"  >
+    <article id={`${props.demo}`} className="w3-dropdown-content w3-transparent w3-container" style={{width:`${props.width2}`}}>
      {props.children}
     </article>
   </section>
