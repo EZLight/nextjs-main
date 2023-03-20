@@ -29,4 +29,18 @@ export function HeaderTab (){
 </header>
 }
 
+
+export function HeaderDT (){
+    <header  className={Navigation.NavBarDT} >
+        <button className={Navigation.MemberButtonDT} ></button>
+    <button className={Navigation.HomeButtonDT}><Link href="/">Home</Link></button>
+    <button className={Navigation.NavButtonDT}><Link href="/projects">Projects</Link></button>
+    <button className={Navigation.NavButtonDT}><Link href="https://www.antiblasphemystudios.com">Blog</Link></button>
+    <button className={Navigation.NavButtonDT}><Link href="/contact">Contact</Link></button>
+    <button className={Navigation.NavButtonDT}><Link href="/about">About</Link></button>
+    <button className={Navigation.NavButtonDT}><Link href="/members">Members</Link></button>
+    <button className={Navigation.NavButtonDT}><Link href="/staff">Staff</Link></button>
+</header>
+}
+
 export default Header

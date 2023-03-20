@@ -11,7 +11,7 @@ function BlogBox(props) {
         <div>Date</div>
         </div>
         </div>
-        <div className='w3-padding w3-margin w3-center w3-amber'>
+        <div className='w3-padding w3-margin w3-center w3-white'>
         {props.children}
         </div></div>
   )

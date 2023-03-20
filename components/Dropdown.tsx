@@ -16,7 +16,7 @@ return(
     <div>
     <button onClick={myFunction} style={{width:`${props.width}`}} className={`${props.classType}`}>{props.title}</button>
  <section className="w3-dropdown-click" >
-    <article id={`${props.demo}`} className="w3-dropdown-content w3-transparent w3-container" style={{width:`${props.width2}`}}>
+    <article id={`${props.demo}`} className="w3-dropdown-content w3-transparent" style={{width:`${props.width2}`}}>
      {props.children}
     </article>
   </section>
