@@ -1,4 +1,5 @@
 import React from "react"
+import Desktop from "./Themes/Desktop"
 import Mobile from "./Themes/Mobile"
 import Tablet from "./Themes/Tablet"
 
@@ -12,6 +13,8 @@ return (
         </Mobile>
 
         <Tablet />
+
+        <Desktop />
 
    </div>
 )

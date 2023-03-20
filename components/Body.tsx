@@ -1,4 +1,5 @@
 import React from 'react'
+import BlogBox from './BlogBox'
 import Dropdown from './Dropdown'
 
 function Body(props) {
@@ -9,6 +10,18 @@ function Body(props) {
     </Dropdown>
     
     </article>
+  )
+}
+
+export function BodyTab(props) {
+  return (
+    <article className="">
+    <Dropdown title={props.title} color="black" demo="NewsTab" width="100%" width2="300px" classType="w3-cell-row w3-medium w3-button w3-grey w3-border w3-border-black w3-rightbar w3-center">
+    <div className="w3-medium w3-container w3-cell w3-opacity-min" >{props.children}</div>
+   
+    <BlogBox classType='w3-white' >jlfjaljl;jofjaoifjwljlajajf  joiajflajiofjf  fifjlaj fiajfij iafjfi  fiajfijafajaifji </BlogBox>
+     </Dropdown>
+     </article>
   )
 }
 
