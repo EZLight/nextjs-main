@@ -1,9 +1,6 @@
 import React from 'react'
 import {ABSTabletBanner} from '../../styles/images'
-import Image from "../image"
 import * as NavTab from '../../styles/styles'
-import Dropdown from '../Dropdown'
-import HeaderTab from '../Header'
 import { BodyTab } from '../Body'
 import Footer from '../Footer'
 import Link from 'next/link'
@@ -35,7 +32,7 @@ function Tablet() {
 <BodyTab title="News" />
 </div>
           </article>
-              <section><Footer settings="w3-container w3-center"></Footer></section>
+              <section><Footer settings="w3-container w3-amber w3-center"></Footer></section>
 
     </div>
   )
